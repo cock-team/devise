@@ -32,7 +32,6 @@ end
 #   gem "jruby-openssl"
 # end
 
-# TODO:
-# group :mongoid do
-#   gem "mongoid", "~> 4.0.0"
-# end
+group :mongoid do
+  gem "mongoid", "~> 7.5"
+end

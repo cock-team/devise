@@ -86,6 +86,7 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
     bcrypt (3.1.18)
+    bson (4.15.0)
     builder (3.2.4)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
@@ -115,6 +116,12 @@ GEM
     mini_portile2 (2.8.1)
     minitest (5.18.0)
     mocha (1.16.1)
+    mongo (2.18.2)
+      bson (>= 4.14.1, < 5.0.0)
+    mongoid (7.5.2)
+      activemodel (>= 5.1, < 7.1, != 7.0.0)
+      mongo (>= 2.10.5, < 3.0.0)
+      ruby2_keywords (~> 0.0.5)
     multi_xml (0.6.0)
     net-imap (0.3.4)
       date
@@ -224,6 +231,7 @@ PLATFORMS
 DEPENDENCIES
   devise!
   mocha (~> 1.1)
+  mongoid (~> 7.5)
   omniauth
   omniauth-facebook
   omniauth-oauth2

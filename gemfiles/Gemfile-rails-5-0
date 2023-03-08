@@ -25,10 +25,9 @@ platforms :ruby do
   gem "sqlite3", "~> 1.3.6"
 end
 
-# TODO:
-# group :mongoid do
-#   gem "mongoid", "~> 4.0.0"
-# end
+group :mongoid do
+  gem "mongoid", "~> 6.0"
+end
 
 if RUBY_VERSION < "2.3.0"
   # We're getting version 2.2.0 which doesn't play nice with Ruby 2.2, using

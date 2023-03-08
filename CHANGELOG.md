@@ -8,6 +8,7 @@
   * Allow resource class scopes to override the global configuration for `sign_in_after_reset_password` behaviour. [#5429](https://github.com/heartcombo/devise/pull/5429) [@mattr](https://github.com/mattr)
   * Refactor conditional dirty tracking logic to a centralized module to simplify usage throughout the codebase. [#5575](https://github.com/heartcombo/devise/pull/5575)
   * Improve support for Devise in apps with Active Record and Mongoid ORMs loaded, so it does not incorrectly uses new Active Record dirty tracking APIs with a Mongoid Devise model. [#5576](https://github.com/heartcombo/devise/pull/5576)
+  * Reenable Mongoid test suite across all Rails 5+ versions, to ensure we continue supporting it. (Note: testing support with Mongoid up to 7.x, not 8 yet.) [#5568](https://github.com/heartcombo/devise/pull/5568)
 
 * bug fixes
   * Failure app will respond with configured `redirect_status` instead of `error_status` if the recall app returns a redirect status (300..399) [#5573](https://github.com/heartcombo/devise/pull/5573)
