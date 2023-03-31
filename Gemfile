@@ -33,5 +33,5 @@ end
 # end
 
 group :mongoid do
-  gem "mongoid", "~> 7.5"
+  gem "mongoid", "~> 8.0"
 end

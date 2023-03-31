@@ -44,7 +44,7 @@ module Devise
 
     module DirtyTrackingOldMethods
       def devise_email_before_last_save
-        email_was
+        respond_to?(:email_previously_was) ? email_previously_was : email_was
       end
 
       def devise_email_in_database
@@ -52,11 +52,11 @@ module Devise
       end
 
       def devise_saved_change_to_email?
-        email_changed?
+        respond_to?(:email_previously_changed?) ? email_previously_changed? : email_changed?
       end
 
       def devise_saved_change_to_encrypted_password?
-        encrypted_password_changed?
+        respond_to?(:encrypted_password_previously_changed?) ? encrypted_password_previously_changed? : encrypted_password_changed?
       end
 
       def devise_will_save_change_to_email?
