@@ -1,3 +1,8 @@
+### 4.3.0 - 2023-05-01
+
+* Enhancements
+  * Removed the condition that prevents us from running the project
+
 ### 4.3.0 - 2017-05-14
 
 * Enhancements
